@@ -4,7 +4,10 @@ body {
 }
 
 .header {
+  font-family: "Cooper Black";
   text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
 }
 
 .center {
