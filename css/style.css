@@ -73,7 +73,7 @@ body {
 
 #backdrop-status {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
 }
 
 #backdrop-status:checked ~ div.backdrop_panel--left {
