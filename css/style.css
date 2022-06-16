@@ -51,18 +51,38 @@ body {
 }
 
 .backdrop_panel {
-  background: red;
+  background: linear-gradient(180deg, rgba(255,0,0,1) 80%, rgba(120,0,0,1) 100%);
   width: 50%;
   height: 100%;
   float: left;
   position: relative;
   z-index: 2;
   transition: all 2s ease-out;
+  font-family: "Cooper Black";
+  font-size: 70px;
+  color: #fff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
-.backdrop_panel--left { }
+.backdrop_panel--left {
+  text-align: right;
+  box-shadow: inset -0.5px 0px 0px 0px rgba(0,0,0,0.75);
+}
 
-.backdrop_panel--right { }
+.backdrop_panel--right {
+  box-shadow: inset 0.5px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+.backdrop_panel--left > div {
+  margin-top: 40%;
+  margin-right: 5px;
+}
+
+.backdrop_panel--right > div {
+  margin-top: 40%;
+  margin-left: 5px;
+}
   
 .content {
   width: 99.9%;
