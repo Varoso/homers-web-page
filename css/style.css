@@ -11,7 +11,17 @@ body {
 .header {
   font-family: "Cooper Black";
   font-size: 50px;
-  margin-bottom: 0;
+  margin: 0;
+}
+
+.settings {
+  margin-top: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.settings > img {
+  height: 25px;
 }
 
 .center {

@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Homer's Web Page</title>
+    <title></title>
     <meta name="Author" content="Álvaro Martín">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,9 +13,10 @@
     <div class="backdrop">
       <div class="backdrop_wrapper">
         <input id="backdrop-status" type="checkbox" checked>
-        <div class="backdrop_panel backdrop_panel--left"><div>Homer's</div></div>
+        <div class="backdrop_panel backdrop_panel--left"><div id="backdrop-text-left"></div></div>
         <div class="content">
-          <h1 class="header center">Homer's Web Page</h1>
+          <div class="settings right"><img src="assets/images/gear.svg"/></div>
+          <h1 id="header" class="header center"></h1>
           <div class="container">
             <div class="row">
               <div class="col center">
@@ -90,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="backdrop_panel backdrop_panel--right"><div>Web Page</div></div>
+        <div class="backdrop_panel backdrop_panel--right"><div id="backdrop-text-right"></div></div>
       </div>
     </div>
   </body>
