@@ -1,27 +1,8 @@
-@font-face {
-  font-family: "Cooper Black";
-  src: url('../assets/fonts/Cooper_Black.ttf');
-}
+/* Common */
 
 body {
   background-color: #73b7c9;
   margin: 0;
-}
-
-.header {
-  font-family: "Cooper Black";
-  font-size: 50px;
-  margin: 0;
-}
-
-.settings {
-  margin-top: 15px;
-  margin-right: 15px;
-  cursor: pointer;
-}
-
-.settings > img {
-  height: 25px;
 }
 
 .center {
@@ -52,6 +33,20 @@ body {
   margin-right: 10% !important;
 }
 
+/* Font */
+
+@font-face {
+  font-family: "Cooper Black";
+  src: url('../assets/fonts/Cooper_Black.ttf');
+}
+
+/* Header */
+
+.header {
+  font-family: "Cooper Black";
+  font-size: 50px;
+}
+
 /* Backdrop */
 
 .backdrop {
@@ -60,12 +55,12 @@ body {
   overflow: hidden;
 }
 
-.backdrop_wrapper {
+.backdrop-wrapper {
   width: 100%;
   height: 100%;
 }
 
-.backdrop_panel {
+.backdrop-panel {
   background: linear-gradient(180deg, rgba(255,0,0,1) 80%, rgba(120,0,0,1) 100%);
   width: 50%;
   height: 100%;
@@ -80,19 +75,16 @@ body {
   -webkit-text-stroke-color: black;
 }
 
-.backdrop_panel--left {
+.backdrop-panel-left {
   text-align: right;
 }
 
-.backdrop_panel--right {
-}
-
-.backdrop_panel--left > div {
+.backdrop-panel-left > div {
   margin-top: 40%;
   margin-right: 5px;
 }
 
-.backdrop_panel--right > div {
+.backdrop-panel-right > div {
   margin-top: 40%;
   margin-left: 5px;
 }
@@ -108,18 +100,18 @@ body {
   position: fixed;
 }
 
-#backdrop-status:checked ~ div.backdrop_panel--left {
+#backdrop-status:checked ~ div.backdrop-panel-left {
   transform: translateX(0);
 }
 
-#backdrop-status:checked ~ div.backdrop_panel--right {
+#backdrop-status:checked ~ div.backdrop-panel-right {
   transform: translateX(0);
 }
 
-.backdrop_panel--left {
+.backdrop-panel-left {
   transform: translateX(-100%);
 }
 
-.backdrop_panel--right {
+.backdrop-panel-right {
   transform: translateX(100%);
 }
